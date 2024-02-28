@@ -1,38 +1,66 @@
-.App {
+.container {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.center {
+  margin: 0 auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.main-heading {
+  margin-top: 20px;
+  margin-bottom: 20px; 
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.table-container {
+  margin-bottom: 20px; 
 }
 
-.App-link {
-  color: #61dafb;
+table.center {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  border-collapse: collapse;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+th, td {
+  padding: 8px;
+}
+
+th:first-child,
+td:first-child {
+  padding-left: 16px; 
+}
+
+th {
+  background-color: #4caf50; 
+  color: #ffffff; 
+}
+
+tr:not(:last-child) td {
+  border-bottom: 1px solid #ddd; 
+}
+
+tr:last-child td {
+  border-bottom: 2px solid #4caf50; 
+}
+
+.footer {
+  margin-top: 20px;
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+}
+
+.button, .page-number-box {
+  background-color: #4caf50; 
+  color: #ffffff; 
+  border: none;
+  padding: 10px 20px;
+  margin: 0 10px; 
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.button:hover {
+  background-color: #388e3c; 
 }
